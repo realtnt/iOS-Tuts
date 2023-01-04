@@ -1,9 +1,5 @@
 import UIKit
 
-var heap: [UInt8] = Array(repeating: 0, count: 10 * 1024)
+let array = [6,2,5,4,56,9]
 
-print(MemoryLayout.stride(ofValue: heap))
-
-print(MemoryLayout.size(ofValue: heap))
-
-print(heap.capacity)
+print(array.map{$0 + 1})
