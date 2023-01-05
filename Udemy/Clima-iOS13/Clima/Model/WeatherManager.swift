@@ -10,14 +10,17 @@ import Foundation
 import CoreLocation
 
 struct WeatherManager {
-    let weatherURL = "https://api.openweathermap.org/data/2.5/weather?appid=fb70fcaca2b80fcef5d5ca5c589a32d0&units=metric"
+    var weatherURL: String {
+        guard let appid = ProcessInfo.processInfo.environment["OPENWEATHERMAP_SECRET"] else { return "" }
+        return "https://api.openweathermap.org/data/2.5/weather?units=metric&appid=" + appid
+    }
     var weatherIcon = ""
-
     var delegate: WeatherManagerDelegate?
 
     func fetchWeather(cityName: String) {
         let urlString = "\(weatherURL)&q=\(cityName)"
         performRequest(with: urlString)
+        print(urlString)
     }
 
     func fetchWeather(lat: CLLocationDegrees, lon: CLLocationDegrees) {
