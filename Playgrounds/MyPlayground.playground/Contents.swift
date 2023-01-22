@@ -1,5 +1,26 @@
-import UIKit
+import Foundation
 
-let array = [6,2,5,4,56,9]
+class Animal {
+    var name: String
+    init(n: String) {
+        name = n
+    }
+}
 
-print(array.map{$0 + 1})
+class Human: Animal {
+    func code() {
+        print("Typing away...")
+    }
+}
+
+class Fish: Animal {
+    func breatheUnderwater() {
+        print("Breathing under water.")
+    }
+}
+
+
+let theo = Human(n: "Theo")
+let jim = Human(n: "Jim")
+let nemo = Fish(n: "Nemo")
+
