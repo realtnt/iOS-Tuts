@@ -112,7 +112,7 @@ class DoCatchTryThrowsBootcampViewModel: ObservableObject {
 
         do {
             let result = try manager.fakeFailed()
-//            text4 = result + String(counter4)
+            text4 = result + String(counter4)
 
             let result2 = try manager.getTitle4()
             text4 = result2 + String(counter4)

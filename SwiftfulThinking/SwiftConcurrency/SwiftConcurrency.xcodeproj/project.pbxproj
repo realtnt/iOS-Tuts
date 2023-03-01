@@ -13,6 +13,10 @@
 		DD98F23E29A390AD0036894A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD98F23D29A390AD0036894A /* Preview Assets.xcassets */; };
 		DD98F24529A391250036894A /* DoCatchTryThrowsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD98F24429A391250036894A /* DoCatchTryThrowsBootcamp.swift */; };
 		DD98F24729A3ABD40036894A /* DownloadImageAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD98F24629A3ABD40036894A /* DownloadImageAsync.swift */; };
+		E472D64B29A4D4CB0094BB31 /* AsyncAwaitBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472D64A29A4D4CB0094BB31 /* AsyncAwaitBootcamp.swift */; };
+		E472D64D29A5093E0094BB31 /* TaskBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472D64C29A5093E0094BB31 /* TaskBootcamp.swift */; };
+		E472D64F29A5853A0094BB31 /* AsyncLetBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472D64E29A5853A0094BB31 /* AsyncLetBootcamp.swift */; };
+		E472D65129A5EFBF0094BB31 /* TaskGroupBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472D65029A5EFBF0094BB31 /* TaskGroupBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		DD98F23D29A390AD0036894A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DD98F24429A391250036894A /* DoCatchTryThrowsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoCatchTryThrowsBootcamp.swift; sourceTree = "<group>"; };
 		DD98F24629A3ABD40036894A /* DownloadImageAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageAsync.swift; sourceTree = "<group>"; };
+		E472D64A29A4D4CB0094BB31 /* AsyncAwaitBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitBootcamp.swift; sourceTree = "<group>"; };
+		E472D64C29A5093E0094BB31 /* TaskBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskBootcamp.swift; sourceTree = "<group>"; };
+		E472D64E29A5853A0094BB31 /* AsyncLetBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncLetBootcamp.swift; sourceTree = "<group>"; };
+		E472D65029A5EFBF0094BB31 /* TaskGroupBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskGroupBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,10 @@
 				DD98F23829A390AB0036894A /* ContentView.swift */,
 				DD98F24429A391250036894A /* DoCatchTryThrowsBootcamp.swift */,
 				DD98F24629A3ABD40036894A /* DownloadImageAsync.swift */,
+				E472D64A29A4D4CB0094BB31 /* AsyncAwaitBootcamp.swift */,
+				E472D64C29A5093E0094BB31 /* TaskBootcamp.swift */,
+				E472D64E29A5853A0094BB31 /* AsyncLetBootcamp.swift */,
+				E472D65029A5EFBF0094BB31 /* TaskGroupBootcamp.swift */,
 				DD98F23A29A390AD0036894A /* Assets.xcassets */,
 				DD98F23C29A390AD0036894A /* Preview Content */,
 			);
@@ -146,7 +158,11 @@
 				DD98F24729A3ABD40036894A /* DownloadImageAsync.swift in Sources */,
 				DD98F24529A391250036894A /* DoCatchTryThrowsBootcamp.swift in Sources */,
 				DD98F23929A390AB0036894A /* ContentView.swift in Sources */,
+				E472D64D29A5093E0094BB31 /* TaskBootcamp.swift in Sources */,
+				E472D64B29A4D4CB0094BB31 /* AsyncAwaitBootcamp.swift in Sources */,
 				DD98F23729A390AB0036894A /* SwiftConcurrencyApp.swift in Sources */,
+				E472D64F29A5853A0094BB31 /* AsyncLetBootcamp.swift in Sources */,
+				E472D65129A5EFBF0094BB31 /* TaskGroupBootcamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,9 +305,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.thetaphoto.SwiftConcurrency;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,9 +336,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.thetaphoto.SwiftConcurrency;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
