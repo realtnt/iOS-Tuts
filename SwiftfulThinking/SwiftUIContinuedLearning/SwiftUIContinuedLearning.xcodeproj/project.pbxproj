@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4167AE629BA688400BADC56 /* CodableBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4167AE529BA688400BADC56 /* CodableBootcamp.swift */; };
 		E472D65F29A686160094BB31 /* SwiftUIContinuedLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472D65E29A686160094BB31 /* SwiftUIContinuedLearningApp.swift */; };
 		E472D66129A686160094BB31 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472D66029A686160094BB31 /* ContentView.swift */; };
 		E472D66329A686170094BB31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E472D66229A686170094BB31 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E4167AE529BA688400BADC56 /* CodableBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBootcamp.swift; sourceTree = "<group>"; };
 		E472D65B29A686160094BB31 /* SwiftUIContinuedLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIContinuedLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E472D65E29A686160094BB31 /* SwiftUIContinuedLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIContinuedLearningApp.swift; sourceTree = "<group>"; };
 		E472D66029A686160094BB31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				E472D67129A6D8E60094BB31 /* TypeAliasBootcamp.swift */,
 				E472D66229A686170094BB31 /* Assets.xcassets */,
 				E472D67329A6DB3E0094BB31 /* EscapingBootcamp.swift */,
+				E4167AE529BA688400BADC56 /* CodableBootcamp.swift */,
 				E472D66429A686170094BB31 /* SwiftUIContinuedLearning.entitlements */,
 				E472D66529A686170094BB31 /* Preview Content */,
 			);
@@ -154,6 +157,7 @@
 				E472D67429A6DB3E0094BB31 /* EscapingBootcamp.swift in Sources */,
 				E472D67029A6D2260094BB31 /* WeakSelfBootcamp.swift in Sources */,
 				E472D66E29A686450094BB31 /* BackgroundThreadBootcamp.swift in Sources */,
+				E4167AE629BA688400BADC56 /* CodableBootcamp.swift in Sources */,
 				E472D67229A6D8E70094BB31 /* TypeAliasBootcamp.swift in Sources */,
 				E472D66129A686160094BB31 /* ContentView.swift in Sources */,
 				E472D65F29A686160094BB31 /* SwiftUIContinuedLearningApp.swift in Sources */,
