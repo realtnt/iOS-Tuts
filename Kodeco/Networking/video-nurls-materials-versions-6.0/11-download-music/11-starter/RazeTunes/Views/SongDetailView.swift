@@ -37,6 +37,7 @@ struct SongDetailView: View {
   // MARK: Properties
   @Binding var musicItem: MusicItem
   @MainActor @State private var playMusic = false
+  @MainActor @State private var isDownloading: Bool = false
   @ObservedObject private var downloader: SongDownloader = SongDownloader()
   
   // MARK: Body
@@ -58,8 +59,18 @@ struct SongDetailView: View {
               await downloadTapped()
             }
           }, label: {
-            Text(downloader.downloadLocation == nil ? "Download" : "Listen")
+            if isDownloading {
+              Text("Downloading...")
+            } else {
+              Text(downloader.downloadLocation == nil ? "Download" : "Listen")
+            }
           })
+          .disabled(isDownloading)
+          
+          if isDownloading {
+            ProgressView()
+          }
+          
           Spacer()
         }
       }
@@ -72,6 +83,12 @@ struct SongDetailView: View {
   
   private func downloadTapped() async {
     if downloader.downloadLocation == nil {
+      isDownloading = true
+      
+      defer {
+        isDownloading = false
+      }
+      
       guard let previewURL = musicItem.previewURL else {
         return
       }

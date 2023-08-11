@@ -1,26 +1,14 @@
 import Foundation
 
-class Animal {
-    var name: String
-    init(n: String) {
-        name = n
-    }
-}
 
-class Human: Animal {
-    func code() {
-        print("Typing away...")
-    }
-}
+func registrationFee(msrp: Int, yearsOld: Int) -> Int {
+    guard yearsOld < 10 else { return 25 }
 
-class Fish: Animal {
-    func breatheUnderwater() {
-        print("Breathing under water.")
-    }
+    let base = max(25_000, msrp)
+    let depreciationFactor = (100 - Double(yearsOld) * 10) / 100
+    
+    return Int(Double(base) * depreciationFactor / 100)
 }
 
 
-let theo = Human(n: "Theo")
-let jim = Human(n: "Jim")
-let nemo = Fish(n: "Nemo")
-
+registrationFee(msrp: 2_250_800, yearsOld: 9)

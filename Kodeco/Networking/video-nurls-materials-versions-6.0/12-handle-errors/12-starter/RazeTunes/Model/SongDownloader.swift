@@ -36,7 +36,11 @@ import SwiftUI
 class SongDownloader: ObservableObject {
   // MARK: Properties
   @Published var downloadLocation: URL?
-
+  enum SongDownloadError: Error {
+    case invalidResponse
+    case FailedToStoreSong
+    case documentDirectoryError
+  }
   private let session: URLSession
   private let sessionConfiguration: URLSessionConfiguration
 
@@ -47,19 +51,13 @@ class SongDownloader: ObservableObject {
   }
 
   // MARK: Functions
-  func downloadSong(at url: URL) async {
-    guard let (downloadURL, response) = try? await session.download(from: url) else {
-      print("Error downloading song.")
-
-      return
-    }
+  func downloadSong(at url: URL) async throws {
+    let (downloadURL, response) = try await session.download(from: url)
 
     guard let httpResponse = response as? HTTPURLResponse,
       httpResponse.statusCode == 200
     else {
-      print("Invalid response code.")
-
-      return
+      throw SongDownloadError.invalidResponse
     }
 
     let fileManager = FileManager.default
@@ -69,9 +67,7 @@ class SongDownloader: ObservableObject {
       in: .userDomainMask
     ).first
     else {
-      print("Song download failed.")
-
-      return
+      throw SongDownloadError.documentDirectoryError
     }
 
     let lastPathComponent = url.lastPathComponent
@@ -84,7 +80,7 @@ class SongDownloader: ObservableObject {
 
       try fileManager.copyItem(at: downloadURL, to: destinationURL)
     } catch {
-      print("Failed to store the song.")
+      throw SongDownloadError.FailedToStoreSong
     }
 
     await MainActor.run {

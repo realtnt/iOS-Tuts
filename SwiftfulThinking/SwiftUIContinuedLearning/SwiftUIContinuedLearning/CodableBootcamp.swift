@@ -63,6 +63,7 @@ class CodableViewModel: ObservableObject {
     func getDataManual() {
         guard let data = getJSONData() else { return }
 
+
         if let localData = try? JSONSerialization.jsonObject(with: data),
            let dictionary = localData as? [String: Any],
            let id = dictionary["id"] as? String,

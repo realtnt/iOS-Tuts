@@ -15,7 +15,9 @@ struct SwiftUIContinuedLearningApp: App {
 //            BackgroundThreadBootcamp()
 //            WeakSelfBootcamp()
 //            EscapingBootcamp()
-            CodableBootcamp()
+//            CodableBootcamp()
+//            DownloadWithEscaping()
+            DownloadWithCombine()
         }
     }
 }
