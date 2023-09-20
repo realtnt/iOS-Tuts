@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' buildActiveScheme='true' executeOnSourceChanges='true' importAppTypes='true'>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
     <pages>
         <page name='Page1'/>
         <page name='Page2'/>
         <page name='Delegate'/>
         <page name='Time and Date'/>
+        <page name='FizzBuzz'/>
+        <page name='Untitled Page 3'/>
+        <page name='Untitled Page'/>
     </pages>
 </playground>
