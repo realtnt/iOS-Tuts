@@ -23,6 +23,15 @@ struct MainView: View {
                 NavigationLink("Images") {
                     ImagesView()
                 }
+                NavigationLink("Sounds") {
+                    PlayAudioView()
+                }
+                NavigationLink("Roll the Dice") {
+                    RollDiceView()
+                }
+                NavigationLink("PressMe") {
+                    PressMeView()
+                }
             }
         }
     }

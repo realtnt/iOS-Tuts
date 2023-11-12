@@ -11,6 +11,12 @@
 		E48C47782AFFF08D00752AA2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C47772AFFF08D00752AA2 /* MainView.swift */; };
 		E48C477A2B00AFB900752AA2 /* SFSymbolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C47792B00AFB900752AA2 /* SFSymbolsView.swift */; };
 		E48C477C2B00C32400752AA2 /* ImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C477B2B00C32400752AA2 /* ImagesView.swift */; };
+		E48C477E2B01126700752AA2 /* PlayAudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C477D2B01126700752AA2 /* PlayAudioView.swift */; };
+		E48C47802B0157E000752AA2 /* RollDiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C477F2B0157E000752AA2 /* RollDiceView.swift */; };
+		E48C47832B01664D00752AA2 /* DiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C47822B01664D00752AA2 /* DiceModel.swift */; };
+		E48C47852B01666500752AA2 /* RollDiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C47842B01666500752AA2 /* RollDiceViewModel.swift */; };
+		E48C47872B01668F00752AA2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C47862B01668F00752AA2 /* SettingsView.swift */; };
+		E48C47892B019ABD00752AA2 /* PressMeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C47882B019ABD00752AA2 /* PressMeView.swift */; };
 		E4A2896F2AFFC4990020AB40 /* YouAreAwesomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A2896E2AFFC4990020AB40 /* YouAreAwesomeApp.swift */; };
 		E4A289712AFFC4990020AB40 /* YouAreAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A289702AFFC4990020AB40 /* YouAreAwesome.swift */; };
 		E4A289732AFFC49B0020AB40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4A289722AFFC49B0020AB40 /* Assets.xcassets */; };
@@ -42,6 +48,12 @@
 		E48C47772AFFF08D00752AA2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E48C47792B00AFB900752AA2 /* SFSymbolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsView.swift; sourceTree = "<group>"; };
 		E48C477B2B00C32400752AA2 /* ImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesView.swift; sourceTree = "<group>"; };
+		E48C477D2B01126700752AA2 /* PlayAudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayAudioView.swift; sourceTree = "<group>"; };
+		E48C477F2B0157E000752AA2 /* RollDiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollDiceView.swift; sourceTree = "<group>"; };
+		E48C47822B01664D00752AA2 /* DiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceModel.swift; sourceTree = "<group>"; };
+		E48C47842B01666500752AA2 /* RollDiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollDiceViewModel.swift; sourceTree = "<group>"; };
+		E48C47862B01668F00752AA2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E48C47882B019ABD00752AA2 /* PressMeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressMeView.swift; sourceTree = "<group>"; };
 		E4A2896B2AFFC4990020AB40 /* YouAreAwesome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouAreAwesome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4A2896E2AFFC4990020AB40 /* YouAreAwesomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouAreAwesomeApp.swift; sourceTree = "<group>"; };
 		E4A289702AFFC4990020AB40 /* YouAreAwesome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouAreAwesome.swift; sourceTree = "<group>"; };
@@ -79,6 +91,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E48C47812B01663400752AA2 /* RollDice */ = {
+			isa = PBXGroup;
+			children = (
+				E48C477F2B0157E000752AA2 /* RollDiceView.swift */,
+				E48C47822B01664D00752AA2 /* DiceModel.swift */,
+				E48C47842B01666500752AA2 /* RollDiceViewModel.swift */,
+				E48C47862B01668F00752AA2 /* SettingsView.swift */,
+			);
+			path = RollDice;
+			sourceTree = "<group>";
+		};
 		E4A289622AFFC4990020AB40 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +125,7 @@
 		E4A2896D2AFFC4990020AB40 /* YouAreAwesome */ = {
 			isa = PBXGroup;
 			children = (
+				E48C47812B01663400752AA2 /* RollDice */,
 				E4A2896E2AFFC4990020AB40 /* YouAreAwesomeApp.swift */,
 				E4A289702AFFC4990020AB40 /* YouAreAwesome.swift */,
 				E4A289722AFFC49B0020AB40 /* Assets.xcassets */,
@@ -110,6 +134,8 @@
 				E48C477B2B00C32400752AA2 /* ImagesView.swift */,
 				E48C47772AFFF08D00752AA2 /* MainView.swift */,
 				E4A289742AFFC49B0020AB40 /* Preview Content */,
+				E48C477D2B01126700752AA2 /* PlayAudioView.swift */,
+				E48C47882B019ABD00752AA2 /* PressMeView.swift */,
 			);
 			path = YouAreAwesome;
 			sourceTree = "<group>";
@@ -270,11 +296,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				E48C47762AFFF07400752AA2 /* NamasteView.swift in Sources */,
+				E48C477E2B01126700752AA2 /* PlayAudioView.swift in Sources */,
 				E48C477C2B00C32400752AA2 /* ImagesView.swift in Sources */,
 				E48C47782AFFF08D00752AA2 /* MainView.swift in Sources */,
+				E48C47852B01666500752AA2 /* RollDiceViewModel.swift in Sources */,
 				E48C477A2B00AFB900752AA2 /* SFSymbolsView.swift in Sources */,
 				E4A289712AFFC4990020AB40 /* YouAreAwesome.swift in Sources */,
+				E48C47802B0157E000752AA2 /* RollDiceView.swift in Sources */,
 				E4A2896F2AFFC4990020AB40 /* YouAreAwesomeApp.swift in Sources */,
+				E48C47832B01664D00752AA2 /* DiceModel.swift in Sources */,
+				E48C47892B019ABD00752AA2 /* PressMeView.swift in Sources */,
+				E48C47872B01668F00752AA2 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
