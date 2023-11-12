@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E48C47762AFFF07400752AA2 /* NamasteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C47752AFFF07400752AA2 /* NamasteView.swift */; };
+		E48C47782AFFF08D00752AA2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C47772AFFF08D00752AA2 /* MainView.swift */; };
+		E48C477A2B00AFB900752AA2 /* SFSymbolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C47792B00AFB900752AA2 /* SFSymbolsView.swift */; };
+		E48C477C2B00C32400752AA2 /* ImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48C477B2B00C32400752AA2 /* ImagesView.swift */; };
 		E4A2896F2AFFC4990020AB40 /* YouAreAwesomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A2896E2AFFC4990020AB40 /* YouAreAwesomeApp.swift */; };
-		E4A289712AFFC4990020AB40 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A289702AFFC4990020AB40 /* ContentView.swift */; };
+		E4A289712AFFC4990020AB40 /* YouAreAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A289702AFFC4990020AB40 /* YouAreAwesome.swift */; };
 		E4A289732AFFC49B0020AB40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4A289722AFFC49B0020AB40 /* Assets.xcassets */; };
 		E4A289762AFFC49B0020AB40 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4A289752AFFC49B0020AB40 /* Preview Assets.xcassets */; };
 		E4A289802AFFC49B0020AB40 /* YouAreAwesomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A2897F2AFFC49B0020AB40 /* YouAreAwesomeTests.swift */; };
@@ -34,9 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E48C47752AFFF07400752AA2 /* NamasteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamasteView.swift; sourceTree = "<group>"; };
+		E48C47772AFFF08D00752AA2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E48C47792B00AFB900752AA2 /* SFSymbolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsView.swift; sourceTree = "<group>"; };
+		E48C477B2B00C32400752AA2 /* ImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesView.swift; sourceTree = "<group>"; };
 		E4A2896B2AFFC4990020AB40 /* YouAreAwesome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouAreAwesome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4A2896E2AFFC4990020AB40 /* YouAreAwesomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouAreAwesomeApp.swift; sourceTree = "<group>"; };
-		E4A289702AFFC4990020AB40 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E4A289702AFFC4990020AB40 /* YouAreAwesome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouAreAwesome.swift; sourceTree = "<group>"; };
 		E4A289722AFFC49B0020AB40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4A289752AFFC49B0020AB40 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E4A2897B2AFFC49B0020AB40 /* YouAreAwesomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouAreAwesomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,8 +103,12 @@
 			isa = PBXGroup;
 			children = (
 				E4A2896E2AFFC4990020AB40 /* YouAreAwesomeApp.swift */,
-				E4A289702AFFC4990020AB40 /* ContentView.swift */,
+				E4A289702AFFC4990020AB40 /* YouAreAwesome.swift */,
 				E4A289722AFFC49B0020AB40 /* Assets.xcassets */,
+				E48C47752AFFF07400752AA2 /* NamasteView.swift */,
+				E48C47792B00AFB900752AA2 /* SFSymbolsView.swift */,
+				E48C477B2B00C32400752AA2 /* ImagesView.swift */,
+				E48C47772AFFF08D00752AA2 /* MainView.swift */,
 				E4A289742AFFC49B0020AB40 /* Preview Content */,
 			);
 			path = YouAreAwesome;
@@ -257,7 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4A289712AFFC4990020AB40 /* ContentView.swift in Sources */,
+				E48C47762AFFF07400752AA2 /* NamasteView.swift in Sources */,
+				E48C477C2B00C32400752AA2 /* ImagesView.swift in Sources */,
+				E48C47782AFFF08D00752AA2 /* MainView.swift in Sources */,
+				E48C477A2B00AFB900752AA2 /* SFSymbolsView.swift in Sources */,
+				E4A289712AFFC4990020AB40 /* YouAreAwesome.swift in Sources */,
 				E4A2896F2AFFC4990020AB40 /* YouAreAwesomeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +452,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.thetaphoto.YouAreAwesome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -464,6 +483,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.thetaphoto.YouAreAwesome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
