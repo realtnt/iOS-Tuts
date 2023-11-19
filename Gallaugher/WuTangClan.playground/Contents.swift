@@ -78,6 +78,28 @@ struct Coder {
     let coderName = wuTangProgrammer()
 }
 
-var coders = [String]()
+// Q5
+
+var coders = [Coder]()
+
+// Q6
+
+func generateNames(names: [String]) -> [Coder] {
+    var outputList = [Coder]()
+    
+    for name in names {
+        outputList.append(Coder(name: name))
+    }
+    
+    return outputList
+}
+
+let coderNames = generateNames(names: swiftStudents)
+
+for coder in coderNames {
+    print("\(coder.name) is \(coder.coderName)")
+}
+
+
 
 

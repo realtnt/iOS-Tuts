@@ -33,6 +33,7 @@ class PlayAudioViewModel: ObservableObject {
 
 struct PlayAudioView: View {
     @StateObject var vm = PlayAudioViewModel()
+    @State private var mute = false
     
     let data = (0...5).map { "sound\($0)" }
     let columns = [
@@ -46,7 +47,9 @@ struct PlayAudioView: View {
         LazyVGrid(columns: columns) {
             ForEach(data, id: \.self) { item in
                 Button(item) {
-                    vm.play(clip: item)
+                    if !mute {
+                        vm.play(clip: item)
+                    }
                 }
                 .buttonStyle(.bordered)
             }
@@ -54,10 +57,24 @@ struct PlayAudioView: View {
         
         Spacer()
         
-        Button("Play Random") {
-            vm.playRandom()
+        HStack {
+            Text("Mute")
+            Toggle("Mute", isOn: $mute)
+                .labelsHidden()
+                .onChange(of: mute) {
+                    if vm.audioPlayer != nil && vm.audioPlayer.isPlaying {
+                        vm.audioPlayer.stop()
+                    }
+                }
+            Spacer()
+            Button("Play Random") {
+                if !mute {
+                    vm.playRandom()
+                }
+            }
+            .buttonStyle(.borderedProminent)
         }
-        .buttonStyle(.borderedProminent)
+        .padding()
     }
 }
 

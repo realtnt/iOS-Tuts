@@ -48,6 +48,7 @@ struct YouAreAwesomeView: View {
                         .background(vm.randomColor)
                         .cornerRadius(15)
                         .padding(50)
+                        .animation(.easeInOut(duration: 0.1), value: vm.randomImage)
                     
                     Spacer()
                     Text(awesome ? awesomeMessage : greatMessage)
@@ -59,6 +60,7 @@ struct YouAreAwesomeView: View {
                     
                     Toggle("Awesome?", isOn: $awesome)
                         .foregroundStyle(vm.randomColor)
+                        .tint(.accentColor)
                     
                     HStack {
                         Button("Get Random Image") {
